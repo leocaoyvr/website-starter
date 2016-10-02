@@ -62,7 +62,7 @@ gulp.task('browserSync', function() {
   gulp.watch(['./dev/js/**/*.js'], ['javascript']);
 
   gulp.watch(['./dist/js/**/*.js']).on('change', browserSync.reload);
-  gulp.watch(['./dist/html/**/*.html']).on('change', browserSync.reload);
+  gulp.watch(['./dist/**/*.html']).on('change', browserSync.reload);
 });
 
 // Defaullt, comple
