@@ -11,6 +11,7 @@
 **Tools**
 
 -   Gulp & Plugins
+-   Browser Sync
 -   Sublime Text
 
 ##  Project Specs
