@@ -1,12 +1,9 @@
-doctype html
-html
-  head
-    link(rel='stylesheet', href='/css/style.css')
-    script(src='/js/scripts.js')
+extends layout/default.pug
 
-  body
-    include mod/nav.pug
+block head
+    title= index.head.title
 
-    p Hello world!
+    - var pageClass = "index"
 
-
+block content
+    p= index.head.title

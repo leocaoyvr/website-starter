@@ -1,5 +1,10 @@
-ul
-    li
-        a(href="index.html") Home
-    li
-        a(href="about.html") About Us
+//- Navigation
+
+div.nav
+    ul
+        li
+            a(href= "/" + lan + "/" + "index.html")
+                span= nav.home
+        li
+            a(href= "/" + lan + "/" + "about.html").nav-about
+                span= nav.about

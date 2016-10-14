@@ -1,6 +1,58 @@
 @charset "UTF-8";
 
-body {
-    font-family: Georgia, sans-serif;
-    background-color: #ddd;
-}
+/*
+/* Style
+/* Author: Leo Cao (@vivianalive)
+/* Email: leo@ilite.me
+/* Website: http://ilite.me
+/* Made with love in Vancouver, Canada.
+/* ========================= */
+
+/* Vendors
+/* css files from external libs
+/* ------------------------- */
+
+// Normalize CSS
+@import 'vend/normalize';
+
+/* Base
+/* the boilerplate stuff
+/* ------------------------- */
+
+@import 'base/reset';
+@import 'base/color';
+@import 'base/type';
+
+/* Utilities
+/* tools and helpers used globally
+/* ------------------------- */
+
+@import 'util/mixins';
+@import 'util/animate';
+
+/* Modules
+/* small components
+/* ------------------------- */
+
+@import 'mod/nav';
+
+/* Layout
+/* ------------------------- */
+
+@import 'layout/header';
+@import 'layout/footer';
+
+@import 'layout/default';
+
+/* Pages
+/* page-specific styles
+/* ------------------------- */
+
+@import 'page/index';
+@import 'page/about';
+
+/* Atom
+/* atomic css
+/* ------------------------- */
+
+@import 'util/atom';

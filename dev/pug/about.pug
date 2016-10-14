@@ -1,7 +1,9 @@
 extends layout/default.pug
 
+block head
+    title= about.head.title
+
+    - var pageClass = "about"
+
 block content
-    include mod/nav.pug
-
-    p About us
-
+    p= about.head.title

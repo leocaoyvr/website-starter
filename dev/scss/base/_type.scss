@@ -1,0 +1,36 @@
+/*
+/* Type
+/* ========================= */
+
+/* Web Font
+/* ------------------------- */
+
+/* Base
+/* ------------------------- */
+
+body {
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+/* Heading
+/* ------------------------- */
+
+h1, h2, h3, h4,
+.h1, .h2, .h3, .h4 {}
+
+h1, .h1 {}
+
+h2, .h2 {}
+
+
+/* Tltle
+/* ------------------------- */
+
+.title {}
+
+/* Text
+/* ------------------------- */
+
+.text {}

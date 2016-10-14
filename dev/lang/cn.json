@@ -1,0 +1,27 @@
+{
+    "lan": "cn",
+    "title": "网站名字",
+    "nav": {
+        "home": "首页",
+        "about": "关于我们",
+        "product": "产品",
+        "contact": "联系我们",
+        "cgLan": {
+            "name": "English",
+            "url": "en"
+        }
+    },
+    "footer": {
+        "brand": "2016 版权所有"
+    },
+    "index": {
+        "head": {
+            "title": "网站名字"
+        }
+    },
+    "about": {
+        "head": {
+            "title": "关于我们 | 网站名字"
+        }
+    }
+}
