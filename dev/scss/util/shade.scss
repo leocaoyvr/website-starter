@@ -1,0 +1,8 @@
+/*
+/* Shade
+/* mix a color with black
+/* ========================= */
+
+@function shade($color, $percent) {
+    @return mix(#000, $color, $percent);
+}

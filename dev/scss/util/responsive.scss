@@ -1,34 +1,18 @@
-// Modern clearfix
-@mixin clearfix {
-  &::after {
-    content: "";
-    display: table;
-    clear: both;
-  }
-}
-
-// Visually hide element
-@mixin visuallyhidden {
-    margin: -1px;
-    padding: 0;
-    width: 1px;
-    height: 1px;
-    overflow: hidden;
-    clip: rect(0 0 0 0);
-    clip: rect(0, 0, 0, 0);
-    position: absolute;
-}
+/*
+/* Responsive
+/* ========================= */
 
 /* Device resolutions
 /* ------------------------- */
-
 /* ipad pro        1024x1366 */
 /* ipad            768x1024  */
 /* iphone 6p       414x736   */
 /* iphone 6        375x667   */
 /* iphone 5        320x568   */
 
-// Responsive breakpoints
+/* Break Points
+/* ------------------------- */
+
 @mixin breakpoint($ratio) {
     @if $ratio == 8 {
         @media (max-width: 1600px) { @content ; }
@@ -37,15 +21,22 @@
         @media (max-width: 1200px) { @content ; }
     }
     @else if $ratio == 2 {
+        // one column layout begins
         @media (max-width: 800px)  { @content ; }
     }
     @else if $ratio == 1.5 {
+        // compact layout begins
         @media (max-width: 600px)  { @content ; }
+    }
+    @else if $ratio == 1.1 {
+        // optimize for phablet like iPhone 6p
+        @media (max-width: 440px)  { @content ; }
     }
     @else if $ratio == 1 {
         @media (max-width: 400px)  { @content ; }
     }
     @else if $ratio == 0.9 {
+        // specially optimize for small screens
         @media (max-width: 360px)  { @content ; }
     }
 }

@@ -27,8 +27,17 @@
 /* tools and helpers used globally
 /* ------------------------- */
 
-@import 'util/mixins';
 @import 'util/animate';
+@import 'util/clearfix.scss';
+@import 'util/cn.scss';
+@import 'util/en.scss';
+@import 'util/hsb.scss';
+@import 'util/responsive.scss';
+@import 'util/shade.scss';
+@import 'util/shadow.scss';
+@import 'util/tint.scss';
+@import 'util/transition.scss';
+@import 'util/triangle.scss';
 
 /* Modules
 /* small components
