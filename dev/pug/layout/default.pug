@@ -1,21 +1,21 @@
 doctype html
 html
-    head
-        meta(charset="utf-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+  head
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
 
-        link(rel='stylesheet', href='/css/style.css')
-        script(src='/js/scripts.js')
+    link(rel='stylesheet', href='/css/style.css')
+    script(src='/js/scripts.js')
 
-        block head
+    block head
 
-    body.default(class= pageClass + " " + lan)
-        div.wrapper
-            div.header
-                include ../layout/header.pug
+  body.default(class= pageClass + " " + lan)
+    div.wrapper
+      div.header
+        include ../layout/header.pug
 
-            div.main
-                block content
+      div.main
+        block content
 
-            div.footer
-                include ../layout/footer.pug
+      div.footer
+        include ../layout/footer.pug

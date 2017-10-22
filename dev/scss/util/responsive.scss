@@ -14,29 +14,29 @@
 /* ------------------------- */
 
 @mixin breakpoint($ratio) {
-    @if $ratio == 8 {
-        @media (max-width: 1600px) { @content ; }
-    }
-    @else if $ratio == 3 {
-        @media (max-width: 1200px) { @content ; }
-    }
-    @else if $ratio == 2 {
-        // one column layout begins
-        @media (max-width: 800px)  { @content ; }
-    }
-    @else if $ratio == 1.5 {
-        // compact layout begins
-        @media (max-width: 600px)  { @content ; }
-    }
-    @else if $ratio == 1.1 {
-        // optimize for phablet like iPhone 6p
-        @media (max-width: 440px)  { @content ; }
-    }
-    @else if $ratio == 1 {
-        @media (max-width: 400px)  { @content ; }
-    }
-    @else if $ratio == 0.9 {
-        // specially optimize for small screens
-        @media (max-width: 360px)  { @content ; }
-    }
+@if $ratio == 8 {
+  @media (max-width: 1600px) { @content ; }
+}
+@else if $ratio == 3 {
+  @media (max-width: 1200px) { @content ; }
+}
+@else if $ratio == 2 {
+    // one column layout begins
+  @media (max-width: 800px)  { @content ; }
+}
+@else if $ratio == 1.5 {
+    // compact layout begins
+  @media (max-width: 600px)  { @content ; }
+}
+@else if $ratio == 1.1 {
+    // optimize for phablet like iPhone 6p
+  @media (max-width: 440px)  { @content ; }
+}
+@else if $ratio == 1 {
+  @media (max-width: 400px)  { @content ; }
+}
+@else if $ratio == 0.9 {
+    // specially optimize for small screens
+  @media (max-width: 360px)  { @content ; }
+}
 }

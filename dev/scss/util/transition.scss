@@ -6,5 +6,5 @@
                   $duration: .5s,
                   $timing: linear,
                   $delay: 0s) {
-    transition: $property $duration $timing $delay;
+  transition: $property $duration $timing $delay;
 }

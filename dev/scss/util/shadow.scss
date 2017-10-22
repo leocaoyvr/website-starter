@@ -7,9 +7,9 @@
 /* ------------------------- */
 
 @mixin card-shadow($opacity) {
-    // main .05
-    // darker .1
-    box-shadow: 5px 5px 25px rgba(0, 0, 0, $opacity);
+  // main .05
+  // darker .1
+  box-shadow: 5px 5px 25px rgba(0, 0, 0, $opacity);
 }
 
 
@@ -17,7 +17,7 @@
 /* ------------------------- */
 
 @mixin part-shadow($opacity) {
-    // main .05
-    box-shadow: 2px 3px 15px rgba(0, 0, 0, $opacity);
+  // main .05
+  box-shadow: 2px 3px 15px rgba(0, 0, 0, $opacity);
 }
 

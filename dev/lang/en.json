@@ -1,31 +1,31 @@
 {
-    "lan": "en",
-    "title": "Website Name",
-    "nav": {
-        "home": "Home",
-        "about": "About Us",
-        "product": "Product",
-        "contact": "Contact Us",
-        "cgLan": {
-            "name": "中文",
-            "url": "cn"
-        }
-    },
-    "footer": {
-        "brand": "2016 All Rights Reserved."
-    },
-    "index": {
-        "head": {
-            "title": "Website Name"
-        },
-        "main": {
-            "slogan_l1": "Pretty Shoes Make",
-            "slogan_l2": "You Go Further"
-        }
-    },
-    "about": {
-        "head": {
-            "title": "About Us | Website Name"
-        }
+  "lan": "en",
+  "title": "Website Name",
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "product": "Product",
+    "contact": "Contact Us",
+    "cgLan": {
+      "name": "中文",
+      "url": "cn"
     }
+  },
+  "footer": {
+    "brand": "2016 All Rights Reserved."
+  },
+  "index": {
+    "head": {
+      "title": "Website Name"
+    },
+    "main": {
+      "slogan_l1": "Pretty Shoes Make",
+      "slogan_l2": "You Go Further"
+    }
+  },
+  "about": {
+    "head": {
+      "title": "About Us | Website Name"
+    }
+  }
 }
