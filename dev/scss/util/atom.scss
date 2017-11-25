@@ -1,125 +1,169 @@
-/*
-/* Atom
-/* ========================= */
+//
+// Atom
+// Quick modifiers & fixes
+// Following the rules of Emmet CSS abbreviations
+// Add new only if needed & necessary
+// ==============================================
 
-/* Position
-/* ------------------------- */
+// Spacing
+// ----------------------------------------------
 
-/* position */
+.m0           { margin: 0;                   }
+.mt0          { margin-top: 0;               }
+.mb0          { margin-bottom: 0;            }
+.mb10         { margin-bottom: 1rem;         } // 16px
+.mb25         { margin-bottom: 2.5rem;       } // 40px
+.ml0          { margin-left: 0;              }
+.mr0          { margin-right: 0;             }
 
-.pos-r        { position: relative; }
-.pos-a        { position: absolute; }
-.pos-f        { position: fixed; }
+.p0           { padding: 0;                  }
+.pt0          { padding-top: 0;              }
+.pb0          { padding-bottom: 0;           }
+.pl0          { padding-left: 0;             }
+.pr0          { padding-right: 0;            }
 
-.fl-l         { float: left; }
-.fl-r         { float: right; }
+// Positioning
+// ----------------------------------------------
 
-.box-c        { margin-left: auto; margin-right: auto; }
+.pos-a        { position: absolute;          }
+.pos-r        { position: relative;          }
+.pos-f        { position: fixed;             }
 
-.z-0          { z-index: 0; }
+.fl-l         { float: left;                 }
+.fl-r         { float: right;                }
 
-.top3         { top: 3px; }
-.top005em     { top: 0.05em; }
-.top01em      { top: 0.1em; }
+.va-t         { vertical-align: top;         }
+.va-m         { vertical-align: middle;      }
+.va-b         { vertical-align: bottom;      }
+.va-bl        { vertical-align: baseline;    }
 
-/* align */
+.t0           { top: 0;                      }
+.t-a          { top: auto;                   }
+.b0           { top: 0;                      }
+.b-a          { top: auto;                   }
+.l0           { top: 0;                      }
+.l-a          { top: auto;                   }
+.r0           { top: 0;                      }
+.r-a          { top: auto;                   }
 
-.text-c       { text-align: center; }
-.text-l       { text-align: left; }
-.text-r       { text-align: right; }
-.text-j       { text-align: justify; }
+// Displaying
+// ----------------------------------------------
 
-.va-t         { vertical-align: top; }
-.va-m         { vertical-align: middle; }
-.va-b         { vertical-align: bottom; }
+.hide         { display: none;               }
+.d-b          { display: block;              }
+.d-ib         { display: inline-block;       }
+.d-tbl        { display: table;              }
+.d-tbc        { display: table-cell;         }
 
-/* text manuipulation */
+.d-f          { display: flex;               }
+.d-g          { display: grid;               }
 
-.no-wrap      { white-space: nowrap; }
-.no-transform { text-transform: none; }
+// Overflow
+// ----------------------------------------------
 
-/* margin */
+.ov-h         { overflow: hidden;            }
+.ov-v         { overflow: visible;           }
+.ov-s         { overflow: scroll;            }
+.ov-a         { overflow: auto;              }
 
-.mt0          { margin-top: 0; }
+.ovx-h        { overflow: hidden;            }
+.ovx-v        { overflow: visible;           }
+.ovx-s        { overflow: scroll;            }
+.ovx-a        { overflow: auto;              }
 
-.mt05em       { margin-top: .5em; }
-.mt1em        { margin-top: 1em; }
-.mt1d5em      { margin-top: 1.5em; }
-.mt2em        { margin-top: 2em; }
-.mt3em        { margin-top: 3em; }
-.mt3d5em      { margin-top: 3.5em; }
+.ovy-h        { overflow: hidden;            }
+.ovy-v        { overflow: visible;           }
+.ovy-s        { overflow: scroll;            }
+.ovy-a        { overflow: auto;              }
 
-.mb0          { margin-bottom: 0; }
+// Text
+// ----------------------------------------------
 
-.mb05em        { margin-bottom: .5em; }
-.mb1em        { margin-bottom: 1em; }
-.mb1emi        { margin-bottom: 1em!important; }
+.fz1          { font-size: 1rem;             } // 16px
 
-.ml0          { margin-left: 0; }
+.fw100        { font-weight: 100;            } // Extra light
+.fw200        { font-weight: 200;            } // Light/Thin
+.fw300        { font-weight: 300;            } // Book/Demi
+.fw400        { font-weight: 400;            } // Normal/Regular
+.fw500        { font-weight: 500;            } // Medium
+.fw600        { font-weight: 600;            } // Semi/Demi Bold
+.fw700        { font-weight: 700;            } // Bold
+.fw800        { font-weight: 800;            } // Extra Bold, Black
+.fw900        { font-weight: 900;            } // Extra Black, Fat
 
-.mr0          { margin-right: 0; }
+.ff-ss        { font-family: sans-serif;     }
+.ff-s         { font-family: serif;          }
+.ff-m         { font-family: monospace;      }
 
-.ml-auto      { margin-left: auto; }
-.mr-auto      { margin-right: auto; }
+.fs-n         { font-style: normal;          }
+.fs-i         { font-style: italic;          }
+.fs-o         { font-style: oblique;         }
 
-/* padding */
+.fv-n         { font-variant: normal;        }
+.fv-sc        { font-variant: small-caps;    }
 
-.pt0          { padding-top: 0; }
-.pt10         { padding-top: 10px; }
-.pt40         { padding-top: 40px; }
-.pt100        { padding-top: 100px; }
+.lh1          { line-height: 1;              }
 
+.h1           { @extend %h1;                 }
+.h2           { @extend %h2;                 }
+.h3           { @extend %h3;                 }
+.h4           { @extend %h4;                 }
 
-.pb0          { padding-bottom: 0; }
+.ta-c         { text-align: center;          }
+.ta-l         { text-align: left;            }
+.ta-r         { text-align: right;           }
+.ta-j         { text-align: justify;         }
 
-.pl0          { padding-left: 0; }
-.pl30         { padding-left: 30px; }
-.pl40         { padding-left: 40px; }
+.td-n         { text-decoration: none;       }
+.td-u         { text-decoration: underline;  }
 
-.pr0          { padding-right: 0; }
+.tt-n         { text-transform: none;        }
+.tt-u         { text-transform: uppercase;   }
+.tt-l         { text-transform: lowercase;   }
+.tt-c         { text-transform: capitalize;  }
 
-/* Size
-/* ------------------------- */
+// Colors
+// ----------------------------------------------
 
-.d-b          { display: block; }
-.d-ib         { display: inline-block; }
+.cl-title     { color: $cl-text-title;       }
+.cl-body      { color: $cl-text-body;        }
+.cl-minor     { color: $cl-text-minor;       }
+.cl-muted     { color: $cl-text-muted        }
+.cl-ghost     { color: $cl-text-ghost;       }
 
-.w0           { width: 0; }
+// Sizing
+// ----------------------------------------------
 
-.w100p        { width: 100%; }
+.w0           { width: 0;                    }
+.w-a          { width: auto;                 }
+.miw-a        { min-width: auto;             }
+.maw-a        { max-width: auto;             }
+.w50p         { width: 50%;                  }
+.w100p        { width: 100%;                 }
+.w100vw       { width: 100vw;                }
 
-.h-auto       { height: auto; }
-.w-auto       { width: auto; }
+.h0           { height: 0;                   }
+.h-a          { height: auto;                }
+.mih-a        { min-height: auto;            }
+.mah-a        { max-height: auto;            }
+.h50p         { height: 50%;                 }
+.h100p        { height: 100%;                }
+.h100vh       { height: 100vh;               }
 
-/* Opacity
-/* ------------------------- */
+// Borders
+// ----------------------------------------------
 
-.op5          { opacity: .5; }
-.op6          { opacity: .6; }
-.op8          { opacity: .8; }
-.op9          { opacity: .9; }
+.bdw0         { border-width: 0;             }
+.bdrs0        { border-radius: 0;            }
 
-/* Font Size
-/* ------------------------- */
+// Cursor
+// ----------------------------------------------
 
-.fz0          { font-size: 0; }
-.fz10         { font-size: 10px; }
-.fz11         { font-size: 11px; }
-.fz12         { font-size: 12px; }
-.fz13         { font-size: 13px; }
-.fz14         { font-size: 14px; }
-.fz16         { font-size: 16px; }
-.fz18         { font-size: 18px; }
-.fz22         { font-size: 22px; }
-
-.no-border    { border: none!important; }
-.no-bg        { background: none!important; }
-
-.show         { display: block; }
-.hide         { display: none; }
-
-/* Misc
-/* ------------------------- */
-
-.ov-hide      { overflow: hidden; }
-.clearfix     { @include clearfix; }
+.cur-a        { cursor: auto;                }
+.cur-d        { cursor: default;             }
+.cur-c        { cursor: crosshair;           }
+.cur-ha       { cursor: hand;                }
+.cur-he       { cursor: help;                }
+.cur-m        { cursor: move;                }
+.cur-p        { cursor: pointer;             }
+.cur-t        { cursor: text;                }
