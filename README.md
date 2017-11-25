@@ -14,6 +14,12 @@
 -   Browser Sync
 -   Sublime Text
 
+##  CSS Methodologies
+
+-   BEM
+-   SMACSS
+-   Atomic
+
 ##  Project Specs
 
 -   Languages: Chinese and English
@@ -32,4 +38,5 @@
 2.  `gulp`
 3.  Upload the latest *dist* to server
 
-*Made with love in Vancouver, Canada.*
+> Note: This project is mainly for organizing concepts and code snippets.  
+> Each file/module is updated independently, therefore, it may not work properly as a whole.
