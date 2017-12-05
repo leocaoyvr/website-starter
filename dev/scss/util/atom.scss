@@ -104,10 +104,10 @@
 
 .lh1       { line-height: 1;             }
 
-.h1        { @extend %h1;                }
-.h2        { @extend %h2;                }
-.h3        { @extend %h3;                }
-.h4        { @extend %h4;                }
+.hd1       { @extend %h1;                }
+.hd2       { @extend %h2;                }
+.hd3       { @extend %h3;                }
+.hd4       { @extend %h4;                }
 
 .ta-c      { text-align: center;         }
 .ta-l      { text-align: left;           }
